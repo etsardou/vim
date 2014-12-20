@@ -7,13 +7,12 @@ exec 4<scripts/packages
 while read LINE <&4; do
   
   # Get last part of repo (*.git) 
-  modules=$(echo $LINE | awk -F"/" '{print $NF}')
-  echo ">> Cloning $modules"
+  module=$(echo $LINE | awk -F"/" '{print $NF}')
+  echo ">> Cloning $module"
   # Remove .git
   module=${module:0:-4}
   # module is the folder's name
   
-  git submodule add $LINE
-  mv $module bundle
+  git submodule add $LINE bundle/$module/
 done
 
