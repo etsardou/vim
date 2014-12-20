@@ -16,3 +16,10 @@ while read LINE <&4; do
   git submodule add $LINE bundle/$module/
 done
 
+# Keep backups of .vim/ & .vimrc
+mv ~/.vim ~/.vim_back
+mv ~/.vimrc ~/.vimrc_back
+
+# Create links
+ln -s $(echo $PWD) ~/.vim
+ln -s $(echo $PWD)/vimrc ~/.vimrc
