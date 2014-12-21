@@ -1,6 +1,5 @@
 cd ../
 git submodule init
-git submodule update
 
 exec 4<scripts/packages
 
@@ -16,3 +15,4 @@ while read LINE <&4; do
   git submodule add $LINE bundle/$module/
 done
 
+git submodule update
