@@ -1,6 +1,5 @@
 cd ../
 
-
 # Check for removed packages
 exec 4<scripts/packages_legacy
 while read LINE <&4; do

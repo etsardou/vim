@@ -28,9 +28,6 @@
 [submodule "bundle/rainbow_parentheses.vim"]
 	path = bundle/rainbow_parentheses.vim
 	url = https://github.com/kien/rainbow_parentheses.vim.git
-[submodule "bundle/vim-snip"]
-	path = bundle/vim-snip
-	url = https://github.com/garbas/vim-snipmate
 [submodule "bundle/vim-star"]
 	path = bundle/vim-star
 	url = https://github.com/mhinz/vim-startify
@@ -61,6 +58,6 @@
 [submodule "bundle/OmniCppComplete"]
 	path = bundle/OmniCppComplete
 	url = https://github.com/vim-scripts/OmniCppComplete.git
-[submodule "bundle/vim-snipmate"]
-	path = bundle/vim-snipmate
-	url = https://github.com/garbas/vim-snipmate.git
+[submodule "bundle/vim-snippets"]
+	path = bundle/vim-snippets
+	url = https://github.com/honza/vim-snippets.git

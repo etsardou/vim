@@ -8,7 +8,6 @@ https://github.com/yegappan/mru.git
 https://github.com/scrooloose/nerdcommenter.git
 https://github.com/scrooloose/nerdtree.git
 https://github.com/kien/rainbow_parentheses.vim.git
-https://github.com/garbas/vim-snipmate
 https://github.com/mhinz/vim-startify
 https://github.com/ervandew/supertab.git
 https://github.com/godlygeek/tabular.git
@@ -19,4 +18,4 @@ https://github.com/nathanaelkane/vim-indent-guides.git
 https://github.com/scrooloose/syntastic.git
 https://github.com/kristijanhusak/vim-multiple-cursors.git
 https://github.com/vim-scripts/OmniCppComplete.git
-https://github.com/garbas/vim-snipmate.git
+https://github.com/honza/vim-snippets.git

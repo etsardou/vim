@@ -45,6 +45,7 @@ colorscheme skittles_aris                                       " Define colors
 "highlight ColorColumn ctermbg=7                     " Set 80 line column color
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+let g:UltiSnipsSnippetDirectories=["UltiSnips", "my_snippets"]
 
 " Set GitGutter's sign column black for terminal
 if ( !has('gui_running') )
