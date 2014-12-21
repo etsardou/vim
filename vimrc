@@ -12,11 +12,11 @@ set ignorecase                                         " Ingore case by default
 set smartcase                " Ignore case at search, unless camel-case is used
 set incsearch                  " Move through doc, while writing search pattern
 set hlsearch                                 " Highligh search patterns in text
-set clipboard=unnamed            " Use the system clipboard for yank/put/delete
+set clipboard=unnamedplus        " Use the system clipboard for yank/put/delete
 set laststatus=2                                      " Always show status line
 "set ruler                        " Show column number(when airline not in use)
 set mouse=a                                          " Enable mouse in terminal
-set timeoutlen=500 ttimeoutlen=0                         " Eliminate delay in ESC
+set timeoutlen=500 ttimeoutlen=0                       " Eliminate delay in ESC
 
 set backspace=indent,eol,start
 
@@ -172,20 +172,23 @@ inoremap <F4> <ESC>:IndentGuidesToggle<CR>a
 nmap <F5> :GundoToggle<CR>
 inoremap <F5> <ESC>:GundoToggle<CR>
 
-" F6 starts recording, C-F6 stops it, C-S-F6 replays it
-nmap <F6> qa
-inoremap <F6> <ESC>qa
-nmap <C-S-F6> @a
+" C-S-F6 starts recording, C-F6 stops it, F6 replays it
+nmap <C-S-F6> qa
+inoremap <C-S-F6> <ESC>qa
+
+nmap <F6> @a
+inoremap <F6> <ESC>@ai
+
 inoremap <C-F6> <ESC>qa
-inoremap <C-S-F6> <ESC>@a
+nmap <C-F6> qa
 
 " Symbol tree
 nmap <F7> :Tagbar<CR>
 inoremap <F7> <ESC>:Tagbar<CR>
 
 " File tree
-nmap <F8> :NERDTreeTabsToggle<CR>
-inoremap <F8> <ESC>:NERDTreeTabsToggle<CR>
+nmap <F8> :NERDTreeToggle<CR>
+inoremap <F8> <ESC>:NERDTreeToggle<CR>
 
 " Quit all
 nmap <F9> :qa!<CR>
@@ -212,8 +215,8 @@ nmap n nzz
 nmap * *zz
 
 " Delete a word
-inoremap <C-w> <ESC>diwi
-nmap <C-w> diw
+inoremap <C-q> <ESC>diwi
+nmap <C-q> diw
 
 " EasyMotion bindings while in insert mode
 imap ,w <C-o><leader><leader>w
@@ -224,10 +227,16 @@ imap dd{ <ESC>di{i
 imap dd[ <ESC>di[i
 imap dd( <ESC>di(i
 imap dd' <ESC>di'i
+imap dd" <ESC>di"i
+imap ddl <ESC>ddi
 nmap dd{ di{
 nmap dd[ di[i
 nmap dd( di(i
 nmap dd' di'i
+nmap dd" di"i
+
+" double line
+inoremap yyp <ESC>yypi
 
 " Mouse click - search
 noremap <2-LeftMouse> *zz
@@ -347,4 +356,16 @@ autocmd BufReadPost *
 " Remember info about open buffers on close
 set viminfo^=%
 
+" Called once right before you start selecting multiple cursors
+function! Multiple_cursors_before()
+  if exists(':NeoCompleteLock')==2
+    exe 'NeoCompleteLock'
+  endif
+endfunction
 
+" Called once only when the multiple selection is canceled (default <Esc>)
+function! Multiple_cursors_after()
+  if exists(':NeoCompleteUnlock')==2
+    exe 'NeoCompleteUnlock'
+  endif
+endfunction
