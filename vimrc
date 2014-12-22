@@ -136,6 +136,17 @@ let Tlist_Auto_Highlight_Tag = 1               " Highlight tags current in text
 let Tlist_Use_Right_Window = 1                       " Place Tlist window right
 set updatetime=1100
 
+""""""""""""""VIM-JAVASCRIPT"""""""""""""""""""""""""
+let b:javascript_fold = 1
+let g:javascript_conceal_function   = "ƒ"
+let g:javascript_conceal_null       = "ø"
+let g:javascript_conceal_this       = "@"
+let g:javascript_conceal_return     = "⇚"
+let g:javascript_conceal_undefined  = "¿"
+let g:javascript_conceal_NaN        = "ℕ"
+let g:javascript_conceal_prototype  = "¶"
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """"""" Toggle cursor block-underline between normal and insert modes """""""""
 if has("autocmd")
