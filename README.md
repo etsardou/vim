@@ -14,3 +14,5 @@ Finally, backup your **.vim/**, **.vimrc** and create soft links to automaticall
 ln -s ~/vim/ ~/.vim
 ln -s ~/vim/vimrc ~/.vimrc
 ```
+
+My Vim cheatsheet: https://docs.google.com/document/d/1G-RNkSP521vA6fK5FTeAyWD2JW_raE61OQlB60To_dQ/edit?usp=sharing

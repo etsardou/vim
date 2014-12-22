@@ -60,7 +60,7 @@ let g:airline#extensions#hunks#non_zero_only = 1
 let g:airline_symbols = {}                        " Allow use of custom symbols
 let g:airline_symbols.branch = '⎇'                     " Use custom branch icon
 
-
+let g:airline#extensions#tabline#enabled = 1
 """""""""""""""" Rainbow Parenthesis """"""""""""""""
 let b:rainbow_matchpairs = [['(', ')'], ['\[', '\]'], ['{', '}']]
 let b:rainbow_operators = ['-', '+', '*', '/', '%', '<', '>' , '|', '=', ',']
@@ -368,16 +368,3 @@ autocmd BufReadPost *
 " Remember info about open buffers on close
 set viminfo^=%
 
-" Called once right before you start selecting multiple cursors
-function! Multiple_cursors_before()
-  if exists(':NeoCompleteLock')==2
-    exe 'NeoCompleteLock'
-  endif
-endfunction
-
-" Called once only when the multiple selection is canceled (default <Esc>)
-function! Multiple_cursors_after()
-  if exists(':NeoCompleteUnlock')==2
-    exe 'NeoCompleteUnlock'
-  endif
-endfunction
