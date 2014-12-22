@@ -60,7 +60,7 @@ let g:airline#extensions#hunks#non_zero_only = 1
 let g:airline_symbols = {}                        " Allow use of custom symbols
 let g:airline_symbols.branch = '⎇'                     " Use custom branch icon
 
-
+let g:airline#extensions#tabline#enabled = 1
 """""""""""""""" Rainbow Parenthesis """"""""""""""""
 let b:rainbow_matchpairs = [['(', ')'], ['\[', '\]'], ['{', '}']]
 let b:rainbow_operators = ['-', '+', '*', '/', '%', '<', '>' , '|', '=', ',']
