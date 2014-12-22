@@ -1,145 +1,166 @@
 snippet ch
-	\chapter{${1}}
-	\label{ch${2}}
-	${3}  
+\chapter{${1}}
+\label{ch${2}}
+${3} 
+endsnippet
 snippet sec
-	\section{${1}}
-	\label{ch${2}:sec${3}}
-	${4}
+\section{${1}}
+\label{ch${2}:sec${3}}
+${4}
+endsnippet
 snippet sub
-	\subsection{${1}}
-	\label{ch${2}:sec${3}:sub${4}}
-	${5}
+\subsection{${1}}
+\label{ch${2}:sec${3}:sub${4}}
+${5}
+endsnippet
 snippet suu
-	\subsubsection{${1}}
-	\label{ch${2}:sec${3}:sub${4}:suu${5}}
-	${6}
+\subsubsection{${1}}
+\label{ch${2}:sec${3}:sub${4}:suu${5}}
+${6}
+endsnippet
 snippet r
-	\ref{${1}} ${2}
+\ref{${1}} ${2}
+endsnippet
 snippet rf
-	\ref{fig:${1}} ${2}
+\ref{fig:${1}} ${2}
+endsnippet
 snippet i
-	\textit{${1}} ${2}
+\textit{${1}} ${2}
+endsnippet
 snippet b
-	\textbf{${1}} ${2}
+\textbf{${1}} ${2}
+endsnippet
 snippet e
-	\emph{${1}} ${2}
+\emph{${1}} ${2}
+endsnippet
 snippet u
-	\underline{${1}} ${2}
+\underline{${1}} ${2}
+endsnippet
 snippet beg
-	\begin{${1:name}}
-		${2}
-	\end{$1}
+\begin{${1:name}}
+  ${2}
+\end{$1}
+endsnippet
 snippet c
-	\centering
+\centering
+endsnippet
 snippet h
-	\hspace{5mm}
+\hspace{5mm}
+endsnippet
 snippet eq
-	\begin{equation}
-		${1}
-	\end{equation}
-	${2} 
+\begin{equation}
+  ${1}
+\end{equation}
+${2}
+endsnippet
 snippet en
-	\begin{enumerate}
-		\item {${1}}
-		\item {${2}}
-		\item {${3}}
-	\end{enumerate}
-	${4}
+\begin{enumerate}
+  \item {${1}}
+  \item {${2}}
+  \item {${3}}
+\end{enumerate}
+${4}
+endsnippet  
 snippet it
-	\begin{itemize}
-		\item {${1}}
-		\item {${2}}
-		\item {${3}}
-	\end{itemize}
-	${4}  
+\begin{itemize}
+  \item {${1}}
+  \item {${2}}
+  \item {${3}}
+\end{itemize}
+${4}  
+endsnippet
 snippet ite
-	\item {${1}} ${2}
+\item {${1}} ${2}
+endsnippet
 snippet f
-	\begin{figure}
-		\centering
-		\sidecaption
-	  \includegraphics[width=\linewidth]{pics/${1:filename}.png}
-	  \caption{${2}}
-	  \label{fig:$1}
-	\end{figure}
-	${3}
+\begin{figure}
+  \centering
+  \sidecaption
+  \includegraphics[width=\linewidth]{pics/${1:filename}.png}
+  \caption{${2}}
+  \label{fig:$1}
+  \end{figure}
+${3}
+endsnippet
 snippet mini2
-	\begin{figure}
-		\centering
-		\begin{minipage}{0.45\textwidth}
-			\centering
-			\sidecaption
-			\includegraphics[width=\linewidth]{pics/${1:filename}.png}
-			\caption{${2}}
-			\label{fig:$1}
-		\end{minipage}
-		\hspace{5mm}
-		\begin{minipage}{0.45\textwidth}
-			\centering
-			\sidecaption
-			\includegraphics[width=\linewidth]{pics/${4:filename}.png}
-			\caption{${5}}
-			\label{fig:$4}
-		\end{minipage}
-	\end{figure}
+\begin{figure}
+  \centering
+  \begin{minipage}{0.45\textwidth}
+    \centering
+    \sidecaption
+    \includegraphics[width=\linewidth]{pics/${1:filename}.png}
+    \caption{${2}}
+    \label{fig:$1}
+  \end{minipage}
+  \hspace{5mm}
+  \begin{minipage}{0.45\textwidth}
+    \centering
+    \sidecaption
+    \includegraphics[width=\linewidth]{pics/${4:filename}.png}
+    \caption{${5}}
+    \label{fig:$4}
+  \end{minipage}
+\end{figure}
+endsnippet
 snippet mini3
-	\begin{figure}
-		\centering
-		\begin{minipage}{0.32\textwidth}
-			\centering
-			\sidecaption
-			\includegraphics[width=\linewidth]{pics/${1:filename}.png}
-			\caption{${2}}
-			\label{fig:$1}
-		\end{minipage}
-		\hspace{5mm}
-		\begin{minipage}{0.32\textwidth}
-			\centering
-			\sidecaption
-			\includegraphics[width=\linewidth]{pics/${4:filename}.png}
-			\caption{${5}}
-			\label{fig:$4}
-		\end{minipage}
-		\hspace{5mm}
-		\begin{minipage}{0.32\textwidth}
-			\centering
-			\sidecaption
-			\includegraphics[width=\linewidth]{pics/${7:filename}.png}
-			\caption{${8}}
-			\label{fig:$7}
-		\end{minipage}
-	\end{figure}
+\begin{figure}
+  \centering
+  \begin{minipage}{0.32\textwidth}
+    \centering
+    \sidecaption
+    \includegraphics[width=\linewidth]{pics/${1:filename}.png}
+    \caption{${2}}
+    \label{fig:$1}
+  \end{minipage}
+  \hspace{5mm}
+  \begin{minipage}{0.32\textwidth}
+    \centering
+    \sidecaption
+    \includegraphics[width=\linewidth]{pics/${4:filename}.png}
+    \caption{${5}}
+    \label{fig:$4}
+  \end{minipage}
+  \hspace{5mm}
+  \begin{minipage}{0.32\textwidth}
+    \centering
+    \sidecaption
+    \includegraphics[width=\linewidth]{pics/${7:filename}.png}
+    \caption{${8}}
+    \label{fig:$7}
+  \end{minipage}
+\end{figure}
+endsnippet
 snippet t3
-	\begin{table}\footnotesize
-		\centering
-		\caption{${1}}
-		\label{tab:${2}}
-		\begin{tabular}{|c|c|c|}
-			\hline
-			\begin{tabular}[c]{@{}c@{}}  \end{tabular} & 
-			\begin{tabular}[c]{@{}c@{}}  \end{tabular} & 
-			\begin{tabular}[c]{@{}c@{}}  \end{tabular}  
-			\\
-			\hline
-		\end{tabular}
-	\end{table}
+\begin{table}\footnotesize
+  \centering
+  \caption{${1}}
+  \label{tab:${2}}
+  \begin{tabular}{|c|c|c|}
+    \hline
+    \begin{tabular}[c]{@{}c@{}}  \end{tabular} & 
+    \begin{tabular}[c]{@{}c@{}}  \end{tabular} & 
+    \begin{tabular}[c]{@{}c@{}}  \end{tabular}  
+    \\
+    \hline
+  \end{tabular}
+\end{table}
+endsnippet
 snippet mc3
-	\begin{table}\footnotesize
-		\centering
-		\label{tab:${1}}
-		\begin{tabular}{|c||c|c|c||c|c|c||c|c|c|}
-			\hline
-			\multicolumn{3}{c||} 
-			{\begin{tabular}[c]{@{}c@{}} ${2} \end{tabular}}
-			\\
-			\hline
-			\begin{tabular}[c]{@{}c@{}} \end{tabular} & 
-			\begin{tabular}[c]{@{}c@{}} \end{tabular} & 
-			\begin{tabular}[c]{@{}c@{}} \end{tabular} 
-			\\
-			\hline
-		\end{tabular}
-	\end{table}
-
+\begin{table}\footnotesize
+  \centering
+  \label{tab:${1}}
+  \begin{tabular}{|c||c|c|c||c|c|c||c|c|c|}
+    \hline
+    \multicolumn{3}{c||} 
+    {\begin{tabular}[c]{@{}c@{}} ${2} \end{tabular}}
+    \\
+    \hline
+    \begin{tabular}[c]{@{}c@{}} \end{tabular} & 
+    \begin{tabular}[c]{@{}c@{}} \end{tabular} & 
+    \begin{tabular}[c]{@{}c@{}} \end{tabular} 
+    \\
+   \hline
+  \end{tabular}
+\end{table}
+endsnippet
 
