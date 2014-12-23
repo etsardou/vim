@@ -216,8 +216,8 @@ nmap n nzz
 nmap * *zz
 
 " Delete a word
-inoremap <C-q> <ESC>diwi
-nmap <C-q> diw
+inoremap <C-w> <ESC>ciw
+nmap <C-w> ciw<ESC>
 
 " EasyMotion bindings while in insert mode
 imap ,w <C-o><leader><leader>w
