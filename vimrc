@@ -235,7 +235,9 @@ nmap dd[ di[i
 nmap dd( di(i
 nmap dd' di'i
 nmap dd" di"i
+" erase up to the next .
 inoremap dd. <ESC>v/\.<CR>hxi
+" erase to the line's end
 inoremap dde <ESC>lv<END>hxi
 
 " double line
