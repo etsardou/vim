@@ -235,6 +235,8 @@ nmap dd[ di[i
 nmap dd( di(i
 nmap dd' di'i
 nmap dd" di"i
+inoremap dd. <ESC>v/\.<CR>hxi
+inoremap dde <ESC>lv<END>hxi
 
 " double line
 inoremap yyp <ESC>yypi
