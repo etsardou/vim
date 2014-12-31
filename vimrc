@@ -34,7 +34,7 @@ set guioptions-=L                                 " Turn off GUI left scrollbar
 let &colorcolumn="80,".join(range(120,999),",")    " Show 80 line vertical line
 "set showbreak=↪
 "set showbreak=⇇
-set showbreak=↳                      " Show marker for lines longer than window
+"set showbreak=↳                      " Show marker for lines longer than window
 """""""""""""""""  For terminals that dont support 256 colors """""""""""""""""
 " (Or if you want terminal's default colors)
 
@@ -63,6 +63,7 @@ let g:airline_symbols = {}                        " Allow use of custom symbols
 let g:airline_symbols.branch = '⎇'                     " Use custom branch icon
 
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
 """""""""""""""" Rainbow Parenthesis """"""""""""""""
 let b:rainbow_matchpairs = [['(', ')'], ['\[', '\]'], ['{', '}']]
 let b:rainbow_operators = ['-', '+', '*', '/', '%', '<', '>' , '|', '=', ',']
@@ -218,8 +219,11 @@ nmap n nzz
 nmap * *zz
 
 " Delete a word
-inoremap <C-w> <ESC>ciw
-nmap <C-w> ciw<ESC>
+imap ddw <ESC>ciw
+nmap ddw ciw<ESC>
+
+" Quick undo in insert
+imap uu <ESC>ui
 
 " EasyMotion bindings while in insert mode
 imap ,w <C-o><leader><leader>w
