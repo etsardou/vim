@@ -150,6 +150,9 @@ endif
 """""""""""""""" Whitespace Display """"""""""""""""
 set listchars=eol:¬,tab:\|\ ,trail:~,extends:>,precedes:<
 
+" Pymode
+let g:pymode = 1
+
 """""""""""""""" Mappings and Defines """"""""""""""""
 " Remove whitespaces
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
