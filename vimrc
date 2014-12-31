@@ -1,3 +1,6 @@
+scriptencoding utf-8
+set encoding=utf-8
+
 " Start Pathogen
 execute pathogen#infect()
 call pathogen#helptags()    " generate helptags for everything in 'runtimepath'
@@ -32,7 +35,6 @@ let &colorcolumn="80,".join(range(120,999),",")    " Show 80 line vertical line
 "set showbreak=↪
 "set showbreak=⇇
 set showbreak=↳                      " Show marker for lines longer than window
-
 """""""""""""""""  For terminals that dont support 256 colors """""""""""""""""
 " (Or if you want terminal's default colors)
 
