@@ -222,8 +222,8 @@ nmap n nzz
 nmap * *zz
 
 " Delete a word
-imap ddw <ESC>ciw
-nmap ddw ciw<ESC>
+imap ddw <ESC>ciw<BS>
+nmap ddw ciw<BS><ESC>
 
 " Quick undo in insert
 imap uu <ESC>ui
