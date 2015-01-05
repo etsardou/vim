@@ -223,7 +223,7 @@ nmap * *zz
 
 " Delete a word
 imap ddw <ESC>ciw<BS>
-nmap ddw ciw<BS><ESC>
+nmap ddw ciw<ESC>
 
 " Quick undo in insert
 imap uu <ESC>ui
@@ -238,14 +238,29 @@ imap dd[ <ESC>di[i
 imap dd( <ESC>di(i
 imap dd' <ESC>di'i
 imap dd" <ESC>di"i
-imap ddl <ESC>ddi
+imap dd< <ESC>di<i
 nmap dd{ di{
-nmap dd[ di[i
-nmap dd( di(i
-nmap dd' di'i
-nmap dd" di"i
+nmap dd[ di[
+nmap dd( di(
+nmap dd' di'
+nmap dd" di"
+nmap dd< di<
+imap dd} <ESC>di}i
+imap dd] <ESC>di]i
+imap dd) <ESC>di)i
+imap dd> <ESC>di>i
+nmap dd} di}
+nmap dd] di]
+nmap dd) di)
+nmap dd> di>
+
+" Erase line
+imap ddl <ESC>ddi
+
 " erase up to the next .
 inoremap dd. <ESC>v/\.<CR>hxi
+" erase up to the next ,
+inoremap dd, <ESC>v/\,<CR>hxi
 " erase to the line's end
 inoremap ddq <ESC>lv<END>hxi
 
