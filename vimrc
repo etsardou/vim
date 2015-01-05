@@ -222,7 +222,7 @@ nmap n nzz
 nmap * *zz
 
 " Delete a word
-imap ddw <ESC>ciw<BS>
+imap ddw <ESC>ciw
 nmap ddw ciw<ESC>
 
 " Quick undo in insert
