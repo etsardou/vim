@@ -276,7 +276,7 @@ vnoremap p "_dP
 inoremap <C-p> <ESC>pa
 
 " Visual mode while in insert mode
-inoremap vv <ESC>v
+inoremap vv <ESC>lv
 
 " Options for wrong words (must use spell)
 inoremap <C-a> <ESC>z=
