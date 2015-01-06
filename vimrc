@@ -258,9 +258,9 @@ nmap dd> di>
 imap ddl <ESC>ddi
 
 " erase up to the next .
-inoremap dd. <ESC>v/\.<CR>hxi
+inoremap dd. <ESC>v/\.<CR>hx:noh<CR>i
 " erase up to the next ,
-inoremap dd, <ESC>v/\,<CR>hxi
+inoremap dd, <ESC>v/\,<CR>hx:noh<CR>i
 " erase to the line's end
 inoremap ddq <ESC>lv<END>hxi
 
