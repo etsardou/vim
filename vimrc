@@ -285,6 +285,11 @@ inoremap <C-a> <ESC>z=
 nnoremap ]c ]czz
 nnoremap [c [czz
 
+" Current line to top
+imap zt <ESC>zti
+" Current line to center
+imap zc <ESC>zzi
+
 " Space will toggle folds!
 nnoremap <space> za
 
