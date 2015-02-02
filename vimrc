@@ -225,8 +225,8 @@ nmap * *zz
 imap ddw <ESC>ciw
 nmap ddw ciw<ESC>
 
-imap reee <C-o>:redraw!
-nmap reee :redraw!
+imap reee <C-o>:redraw!<CR>
+nmap reee :redraw!<CR>
 
 " Quick undo in insert
 imap uu <ESC>ui
