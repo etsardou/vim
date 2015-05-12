@@ -225,6 +225,10 @@ nmap * *zz
 imap ddw <ESC>ciw
 nmap ddw ciw<ESC>
 
+" Copy a word
+imap yyw <ESC>byw
+nmap yyw byw<ESC>
+
 imap reee <C-o>:redraw!<CR>
 nmap reee :redraw!<CR>
 
@@ -256,6 +260,28 @@ nmap dd} di}
 nmap dd] di]
 nmap dd) di)
 nmap dd> di>
+
+" Copy the contents of brackets
+imap yy{ <ESC>yi{i
+imap yy[ <ESC>yi[i
+imap yy( <ESC>yi(i
+imap yy' <ESC>yi'i
+imap yy" <ESC>yi"i
+imap yy< <ESC>yi<i
+nmap yy{ yi{
+nmap yy[ yi[
+nmap yy( yi(
+nmap yy' yi'
+nmap yy" yi"
+nmap yy< yi<
+imap yy} <ESC>yi}i
+imap yy] <ESC>yi]i
+imap yy) <ESC>yi)i
+imap yy> <ESC>yi>i
+nmap yy} yi}
+nmap yy] yi]
+nmap yy) yi)
+nmap yy> yi>
 
 " Erase line
 imap ddl <ESC>ddi
