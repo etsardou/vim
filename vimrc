@@ -148,7 +148,7 @@ if has("autocmd")
 endif
 
 """""""""""""""" Whitespace Display """"""""""""""""
-set listchars=eol:¬,tab:\|\ ,trail:~,extends:>,precedes:<
+set list listchars=eol:¬,tab:\|\ ,trail:~,extends:>,precedes:<
 
 " Pymode
 let g:pymode = 1
