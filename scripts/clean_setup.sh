@@ -1,3 +1,5 @@
+sudo apt-get install vim exuberant-ctags
+
 cd ../
 
 rm -rf bundle/*
